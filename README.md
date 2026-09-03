@@ -1,3 +1,20 @@
 # urwayUTA
 Android app to help UTA students navigate campus resources
-## Screenshots | Sign In | Campus Map | Favorites | |---|---|---| | ![Sign In](screenshots/sign-in.png) | ![Campus Map](screenshots/campus-map.png) | ![Favorites](screenshots/ERB-spotlist.png) | | For You | Clubs | Club Detail | |---|---|---| | ![For You](screenshots/for-you.png) | ![Clubs](screenshots/clubs.png) | ![Club Detail](screenshots/club-detail.png) | ## Key Features - Secure sign-in with UTA credentials - Interactive campus map with building-level navigation - Save any spot as a favorite with one tap; view all saved spots anytime - Personalized 'For You' recommendations based on availability - Browse, join, and create student organizations - Drop custom private or public map pins for personal spots
+
+## Screenshots
+
+| Sign In | Campus Map | Favorites |
+|---|---|---|
+| ![Sign In](screenshots/sign-in.png) | ![Campus Map](screenshots/campus-map.png) | ![Favorites](screenshots/ERB-spotlist.png) |
+
+| For You | Clubs | Club Detail |
+|---|---|---|
+| ![For You](screenshots/for-you.png) | ![Clubs](screenshots/clubs.png) | ![Club Detail](screenshots/club-detail.png) |
+
+## Key Features
+- Secure sign-in with UTA credentials
+- Interactive campus map with building-level navigation
+- Save any spot as a favorite with one tap; view all saved spots anytime
+- Personalized 'For You' recommendations based on availability
+- Browse, join, and create student organizations
+- Drop custom private or public map pins for personal spots
