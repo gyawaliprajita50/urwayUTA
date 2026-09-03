@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <!-- Handle -->
+    <View
+        android:layout_width="40dp" android:layout_height="4dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp" android:layout_marginBottom="12dp"
+        android:background="#CCCCCC"/>
+
+    <!-- Pin icon and title -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp" android:paddingEnd="20dp"
+        android:layout_marginBottom="6dp">
+
+        <ImageView
+            android:layout_width="28dp" android:layout_height="28dp"
+            android:src="@drawable/ic_map_pin"
+            android:tint="@color/colorAccent"
+            android:layout_marginEnd="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Pin Dropped"
+            android:textSize="17sp" android:textStyle="bold"
+            android:textColor="#1A1A2E"/>
+    </LinearLayout>
+
+    <!-- Coordinates -->
+    <TextView
+        android:id="@+id/tvPinCoords"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#888888"
+        android:paddingStart="20dp" android:paddingEnd="20dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Navigate button -->
+    <Button
+        android:id="@+id/btnNavigatePin"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp" android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
+        android:text="Navigate Here"
+        android:textSize="15sp" android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"/>
+
+    <!-- Clear pin button -->
+    <Button
+        android:id="@+id/btnClearPin"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp" android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
+        android:text="Remove Pin"
+        android:textSize="14sp"
+        android:textColor="#C62828"
+        android:background="@drawable/bg_input"/>
+
+    <!-- Dismiss -->
+    <TextView
+        android:id="@+id/btnDismissPin"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:text="Dismiss"
+        android:textSize="14sp"
+        android:textColor="#888888"
+        android:layout_marginBottom="4dp"
+        android:background="?attr/selectableItemBackground"/>
+
+</LinearLayout>

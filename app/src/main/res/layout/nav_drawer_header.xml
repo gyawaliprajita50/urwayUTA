@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@color/colorPrimary" android:orientation="vertical"
+    android:padding="16dp" android:paddingTop="36dp">
+    <TextView android:id="@+id/tvDrawerInitials"
+        android:layout_width="52dp" android:layout_height="52dp"
+        android:background="@drawable/bg_icon_orange" android:gravity="center"
+        android:textColor="@android:color/white" android:textSize="18sp" android:textStyle="bold"/>
+    <TextView android:id="@+id/tvDrawerName"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" android:textColor="@android:color/white"
+        android:textSize="14sp" android:textStyle="bold" android:text="UTA User"/>
+    <TextView android:id="@+id/tvDrawerID"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textColor="#99FFFFFF" android:textSize="11sp" android:text="demo"/>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- URwayUTA brand colors -->
+    <color name="colorPrimary">#003594</color>
+    <color name="colorPrimaryDark">#002570</color>
+    <color name="colorAccent">#FF8200</color>
+    <color name="colorOrange">#FF8200</color>
+    <color name="colorBlue">#003594</color>
+    <color name="colorGreen">#2E7D32</color>
+    <color name="colorRed">#C62828</color>
+    <color name="colorYellow">#F57F17</color>
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorBackground">#F4F6FB</color>
+    <color name="colorCardBorder">#E5E9F0</color>
+    <color name="colorTextPrimary">#1A1A2E</color>
+    <color name="colorTextSecondary">#7A8099</color>
+    <color name="colorTextHint">#AAAAAA</color>
+    <color name="heart_active">#E53935</color>
+    <color name="heart_inactive">#AAAAAA</color>
+    <color name="colorSuccess">#2E7D32</color>
+    <color name="colorError">#C62828</color>
+</resources>

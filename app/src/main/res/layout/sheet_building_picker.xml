@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <!-- Handle -->
+    <View
+        android:layout_width="40dp" android:layout_height="4dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp" android:layout_marginBottom="4dp"
+        android:background="#CCCCCC"/>
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Select a Building"
+        android:textSize="13sp" android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:paddingStart="20dp" android:paddingEnd="20dp"
+        android:paddingTop="10dp" android:paddingBottom="10dp"/>
+
+    <View android:layout_width="match_parent" android:layout_height="0.5dp"
+        android:background="#EEEEEE"/>
+
+    <!-- ERB -->
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="64dp"
+        android:orientation="horizontal" android:gravity="center_vertical"
+        android:paddingStart="20dp" android:paddingEnd="12dp">
+        <LinearLayout
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:orientation="vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="ERB" android:textSize="15sp" android:textStyle="bold"
+                android:textColor="#1A1A1A"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Engineering Research Building"
+                android:textSize="12sp" android:textColor="#888888"/>
+        </LinearLayout>
+        <Button android:id="@+id/btnNavigateErb"
+            android:layout_width="wrap_content" android:layout_height="34dp"
+            android:text="Navigate" android:textSize="11sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/bg_building_btn_orange"
+            android:paddingStart="10dp" android:paddingEnd="10dp"
+            android:layout_marginEnd="8dp"/>
+        <TextView android:id="@+id/rowErb"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Select" android:textSize="13sp"
+            android:textColor="@color/colorPrimary" android:textStyle="bold"
+            android:paddingStart="8dp" android:paddingEnd="8dp" android:paddingTop="8dp" android:paddingBottom="8dp"/>
+    </LinearLayout>
+
+    <View android:layout_width="match_parent" android:layout_height="0.5dp"
+        android:background="#EEEEEE" android:layout_marginStart="20dp"/>
+
+    <!-- NH -->
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="64dp"
+        android:orientation="horizontal" android:gravity="center_vertical"
+        android:paddingStart="20dp" android:paddingEnd="12dp">
+        <LinearLayout
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:orientation="vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="NH" android:textSize="15sp" android:textStyle="bold"
+                android:textColor="#1A1A1A"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Nedderman Hall"
+                android:textSize="12sp" android:textColor="#888888"/>
+        </LinearLayout>
+        <Button android:id="@+id/btnNavigateNh"
+            android:layout_width="wrap_content" android:layout_height="34dp"
+            android:text="Navigate" android:textSize="11sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/bg_building_btn_blue"
+            android:paddingStart="10dp" android:paddingEnd="10dp"
+            android:layout_marginEnd="8dp"/>
+        <TextView android:id="@+id/rowNh"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Select" android:textSize="13sp"
+            android:textColor="@color/colorPrimary" android:textStyle="bold"
+            android:paddingStart="8dp" android:paddingEnd="8dp" android:paddingTop="8dp" android:paddingBottom="8dp"/>
+    </LinearLayout>
+
+    <View android:layout_width="match_parent" android:layout_height="0.5dp"
+        android:background="#EEEEEE" android:layout_marginStart="20dp"/>
+
+    <!-- UH -->
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="64dp"
+        android:orientation="horizontal" android:gravity="center_vertical"
+        android:paddingStart="20dp" android:paddingEnd="12dp">
+        <LinearLayout
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:orientation="vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="UH" android:textSize="15sp" android:textStyle="bold"
+                android:textColor="#1A1A1A"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="University Hall"
+                android:textSize="12sp" android:textColor="#888888"/>
+        </LinearLayout>
+        <Button android:id="@+id/btnNavigateUh"
+            android:layout_width="wrap_content" android:layout_height="34dp"
+            android:text="Navigate" android:textSize="11sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/bg_building_btn_blue"
+            android:paddingStart="10dp" android:paddingEnd="10dp"
+            android:layout_marginEnd="8dp"/>
+        <TextView android:id="@+id/rowUh"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Select" android:textSize="13sp"
+            android:textColor="@color/colorPrimary" android:textStyle="bold"
+            android:paddingStart="8dp" android:paddingEnd="8dp" android:paddingTop="8dp" android:paddingBottom="8dp"/>
+    </LinearLayout>
+
+    <View android:layout_width="match_parent" android:layout_height="0.5dp"
+        android:background="#EEEEEE" android:layout_marginStart="20dp"/>
+
+    <!-- SEIR -->
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="64dp"
+        android:orientation="horizontal" android:gravity="center_vertical"
+        android:paddingStart="20dp" android:paddingEnd="12dp">
+        <LinearLayout
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:orientation="vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="SEIR" android:textSize="15sp" android:textStyle="bold"
+                android:textColor="#1A1A1A"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Science &amp; Engineering Innovation &amp; Research"
+                android:textSize="12sp" android:textColor="#888888"/>
+        </LinearLayout>
+        <Button android:id="@+id/btnNavigateSeir"
+            android:layout_width="wrap_content" android:layout_height="34dp"
+            android:text="Navigate" android:textSize="11sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/bg_building_btn_green"
+            android:paddingStart="10dp" android:paddingEnd="10dp"
+            android:layout_marginEnd="8dp"/>
+        <TextView android:id="@+id/rowSeir"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Select" android:textSize="13sp"
+            android:textColor="@color/colorPrimary" android:textStyle="bold"
+            android:paddingStart="8dp" android:paddingEnd="8dp" android:paddingTop="8dp" android:paddingBottom="8dp"/>
+    </LinearLayout>
+
+    <View android:layout_width="match_parent" android:layout_height="0.5dp"
+        android:background="#EEEEEE"/>
+
+    <!-- Cancel -->
+    <TextView
+        android:id="@+id/btnCancelPicker"
+        android:layout_width="match_parent" android:layout_height="52dp"
+        android:gravity="center" android:text="Cancel"
+        android:textSize="14sp" android:textColor="#888888"
+        android:background="?attr/selectableItemBackground"/>
+
+</LinearLayout>

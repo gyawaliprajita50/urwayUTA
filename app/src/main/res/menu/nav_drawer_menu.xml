@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_change_password"
+        android:icon="@drawable/ic_lock"
+        android:title="Change Password"/>
+    <item android:id="@+id/nav_memberships"
+        android:icon="@drawable/ic_clubs"
+        android:title="My Memberships"/>
+    <group android:id="@+id/nav_group_signout">
+        <item android:id="@+id/nav_sign_out"
+            android:icon="@drawable/ic_signout"
+            android:title="Sign Out"/>
+    </group>
+</menu>

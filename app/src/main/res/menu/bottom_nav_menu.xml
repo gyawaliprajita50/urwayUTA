@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/mapFragment"
+        android:icon="@drawable/ic_map_pin"
+        android:title="Map"/>
+    <item android:id="@+id/clubsFragment"
+        android:icon="@drawable/ic_clubs"
+        android:title="Clubs"/>
+    <item android:id="@+id/servicesFragment"
+        android:icon="@drawable/ic_grid"
+        android:title="Services"/>
+    <item android:id="@+id/accountFragment"
+        android:icon="@drawable/ic_person"
+        android:title="Account"/>
+</menu>

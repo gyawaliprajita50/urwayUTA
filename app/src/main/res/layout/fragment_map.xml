@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground">
+
+    <!-- Toolbar -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="56dp"
+        android:background="@color/colorAccent" android:orientation="horizontal"
+        android:gravity="center_vertical" android:padding="10dp">
+        <ImageButton android:id="@+id/btnHamburger"
+            android:layout_width="36dp" android:layout_height="36dp"
+            android:src="@drawable/ic_menu"
+            android:background="@drawable/bg_icon_transparent"
+            android:tint="@android:color/white"
+            android:onClick="openDrawer"/>
+        <ImageView
+            android:layout_width="20dp" android:layout_height="20dp"
+            android:src="@drawable/ic_map_pin"
+            android:tint="@android:color/white"
+            android:layout_marginStart="8dp" android:layout_marginEnd="6dp"/>
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Campus Map" android:textColor="@android:color/white"
+            android:textSize="16sp" android:textStyle="bold"/>
+        <Button android:id="@+id/btnFullMap"
+            android:layout_width="wrap_content" android:layout_height="32dp"
+            android:text="Full Map" android:textSize="11sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/bg_chip_light"
+            android:paddingStart="12dp" android:paddingEnd="12dp"/>
+    </LinearLayout>
+
+    <!-- Tabs -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="44dp"
+        android:background="@android:color/white" android:orientation="horizontal">
+        <TextView android:id="@+id/tabMap"
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1" android:gravity="center" android:text="Map"
+            android:textSize="13sp" android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:background="@drawable/tab_selected_bottom"/>
+        <TextView android:id="@+id/tabFavorites"
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1" android:gravity="center" android:text="Favorites"
+            android:textSize="13sp" android:textColor="@color/colorTextHint"/>
+        <TextView android:id="@+id/tabForYou"
+            android:layout_width="0dp" android:layout_height="match_parent"
+            android:layout_weight="1" android:gravity="center" android:text="For You"
+            android:textSize="13sp" android:textColor="@color/colorTextHint"/>
+    </LinearLayout>
+
+    <!-- Favorites header -->
+    <LinearLayout
+        android:id="@+id/layoutFavHeader"
+        android:layout_width="match_parent" android:layout_height="48dp"
+        android:orientation="horizontal" android:gravity="center_vertical"
+        android:paddingStart="16dp" android:paddingEnd="12dp"
+        android:background="@android:color/white" android:visibility="gone">
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:text="Saved Spots"
+            android:textSize="15sp" android:textStyle="bold" android:textColor="#1A1A2E"/>
+        <Button android:id="@+id/btnCustomPin"
+            android:layout_width="wrap_content" android:layout_height="34dp"
+            android:text="+ Custom Pin" android:textSize="12sp"
+            android:textColor="@android:color/white"
+            android:background="@color/colorAccent"
+            android:paddingStart="12dp" android:paddingEnd="12dp"/>
+    </LinearLayout>
+
+    <!-- For You header banner -->
+    <LinearLayout
+        android:id="@+id/layoutForYouHeader"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="16dp"
+        android:background="@color/colorPrimary" android:visibility="gone">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Recommended for You"
+            android:textSize="16sp" android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Tap any spot to view details and navigate"
+            android:textSize="12sp" android:textColor="#BBCCFF"
+            android:layout_marginTop="2dp"/>
+    </LinearLayout>
+
+    <!-- Map fills remaining space -->
+    <FrameLayout
+        android:id="@+id/mapContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <fragment android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <!-- Single BUILDINGS button overlaid top-left -->
+        <Button
+            android:id="@+id/btnBuildings"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:text="Buildings"
+            android:textSize="13sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/bg_building_btn_blue"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:layout_gravity="top|start"
+            android:layout_margin="8dp"/>
+
+        <!-- Bottom bar: just navigate label -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_gravity="bottom"
+            android:background="#F0F0F0"
+            android:gravity="center"
+            android:elevation="4dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select a building to explore spots inside"
+                android:textSize="12sp"
+                android:textColor="#888888"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <!-- Empty state -->
+    <LinearLayout
+        android:id="@+id/tvEmptyFav"
+        android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" android:gravity="center"
+        android:visibility="gone"
+        android:background="@color/colorBackground">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="No favorites yet"
+            android:textSize="16sp" android:textStyle="bold" android:textColor="#1A1A2E"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Tap the heart on any spot to save it"
+            android:textSize="13sp" android:textColor="#999999"
+            android:layout_marginTop="6dp"/>
+    </LinearLayout>
+
+    <!-- Spot list (Favorites / For You) -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSpots"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:clipToPadding="false"
+        android:visibility="gone"
+        android:background="@color/colorBackground"/>
+
+</LinearLayout>

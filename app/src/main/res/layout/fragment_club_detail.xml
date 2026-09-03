@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F4F6FB">
+
+    <!-- Toolbar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorAccent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:text="&#8249;"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:padding="0dp"
+            android:background="@drawable/bg_icon_transparent"/>
+
+        <TextView
+            android:id="@+id/tvClubName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        <Button
+            android:id="@+id/btnSaveClub"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:text="Save"
+            android:textSize="11sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/bg_chip_light"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <!-- Club header card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="14dp"
+                    android:background="#FFFFFF">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="10dp">
+                        <TextView
+                            android:id="@+id/tvClubInitials"
+                            android:layout_width="56dp"
+                            android:layout_height="56dp"
+                            android:gravity="center"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_marginEnd="14dp"
+                            android:background="@drawable/bg_circle_club"/>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Club"
+                                android:textSize="10sp"
+                                android:textColor="#888888"/>
+                            <TextView
+                                android:id="@+id/tvClubCategory"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="13sp"
+                                android:textColor="#555555"
+                                android:layout_marginTop="2dp"/>
+                            <TextView
+                                android:id="@+id/tvMemberStatus"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="6dp"
+                                android:textSize="11sp"
+                                android:textStyle="bold"
+                                android:paddingStart="10dp"
+                                android:paddingEnd="10dp"
+                                android:paddingTop="3dp"
+                                android:paddingBottom="3dp"
+                                android:textColor="#5A6480"
+                                android:background="@drawable/bg_tag_grey"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/tvClubDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:textColor="#444444"
+                        android:lineSpacingMultiplier="1.5"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- LOCATION card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="14dp"
+                    android:background="#FFFFFF">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LOCATION"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:textColor="#888888"
+                        android:letterSpacing="0.08"
+                        android:layout_marginBottom="6dp"/>
+                    <TextView
+                        android:id="@+id/tvLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="#1A1A1A"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- HOW TO JOIN card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="14dp"
+                    android:background="#FFFFFF">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="HOW TO JOIN"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:textColor="#888888"
+                        android:letterSpacing="0.08"
+                        android:layout_marginBottom="6dp"/>
+                    <TextView
+                        android:id="@+id/tvHowToJoin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="#1A1A1A"
+                        android:lineSpacingMultiplier="1.5"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- CONTACT EMAIL card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="14dp"
+                    android:background="#FFFFFF">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CONTACT EMAIL"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:textColor="#888888"
+                        android:letterSpacing="0.08"
+                        android:layout_marginBottom="6dp"/>
+                    <TextView
+                        android:id="@+id/tvEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tap to open email app"
+                        android:textSize="11sp"
+                        android:textColor="#AAAAAA"
+                        android:layout_marginTop="3dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- FORM / LINK card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:visibility="gone">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="14dp"
+                    android:background="#FFFFFF">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FORM / LINK"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:textColor="#888888"
+                        android:letterSpacing="0.08"
+                        android:layout_marginBottom="6dp"/>
+                    <TextView
+                        android:id="@+id/tvFormLink"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tap to open in browser"
+                        android:textSize="11sp"
+                        android:textColor="#AAAAAA"
+                        android:layout_marginTop="3dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- DISCORD card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardDiscord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:visibility="gone">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="14dp"
+                    android:background="#FFFFFF">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DISCORD"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:textColor="#888888"
+                        android:letterSpacing="0.08"
+                        android:layout_marginBottom="6dp"/>
+                    <TextView
+                        android:id="@+id/tvDiscordLink"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="#5865F2"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tap to open Discord"
+                        android:textSize="11sp"
+                        android:textColor="#AAAAAA"
+                        android:layout_marginTop="3dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- NOT A MEMBER state -->
+            <LinearLayout android:id="@+id/layoutNone"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:layout_marginBottom="8dp">
+                <Button android:id="@+id/btnApply"
+                    android:layout_width="match_parent" android:layout_height="52dp"
+                    android:text="I've Applied / Contacted"
+                    android:textSize="15sp" android:textColor="@android:color/white"
+                    android:background="@color/colorAccent"/>
+            </LinearLayout>
+
+            <!-- PENDING state -->
+            <LinearLayout android:id="@+id/layoutPending"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:visibility="gone"
+                android:layout_marginBottom="8dp">
+                <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+                    <LinearLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:orientation="vertical"
+                        android:padding="14dp" android:background="#FFF8E1">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Application Pending" android:textSize="14sp"
+                            android:textStyle="bold" android:textColor="#F57F17"
+                            android:layout_marginBottom="6dp"/>
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:text="Your application is under review. Contact the club via UTA email for status updates."
+                            android:textSize="13sp" android:textColor="#555555"
+                            android:lineSpacingMultiplier="1.4" android:layout_marginBottom="8dp"/>
+                        <TextView android:id="@+id/tvPendingEmail"
+                            android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:textSize="13sp" android:textColor="@color/colorPrimary"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <!-- Withdraw Application — blue background white text -->
+                <Button android:id="@+id/btnWithdrawPending"
+                    android:layout_width="match_parent" android:layout_height="48dp"
+                    android:text="Withdraw Application"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/white"
+                    android:background="@color/colorPrimary"/>
+            </LinearLayout>
+
+            <!-- ACTIVE state -->
+            <LinearLayout android:id="@+id/layoutActive"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:visibility="gone"
+                android:layout_marginBottom="8dp">
+                <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+                    <LinearLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:orientation="vertical"
+                        android:padding="14dp" android:background="#E8F5E9">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Active Member" android:textSize="14sp"
+                            android:textStyle="bold" android:textColor="#2E7D32"
+                            android:layout_marginBottom="4dp"/>
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:text="You can view activities, RSVP to events, and access club resources."
+                            android:textSize="13sp" android:textColor="#555555"
+                            android:lineSpacingMultiplier="1.4"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <Button android:id="@+id/btnRsvp"
+                    android:layout_width="match_parent" android:layout_height="52dp"
+                    android:text="RSVP to Next Event"
+                    android:textSize="15sp" android:textColor="@android:color/white"
+                    android:background="@color/colorAccent"
+                    android:layout_marginBottom="8dp"/>
+                <!-- Withdraw Membership — blue background white text -->
+                <Button android:id="@+id/btnWithdrawActive"
+                    android:layout_width="match_parent" android:layout_height="48dp"
+                    android:text="Withdraw Membership"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/white"
+                    android:background="@color/colorPrimary"/>
+            </LinearLayout>
+
+            <!-- WITHDRAWAL state -->
+            <LinearLayout android:id="@+id/layoutWithdrawal"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:visibility="gone"
+                android:layout_marginBottom="8dp">
+                <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:orientation="vertical"
+                        android:padding="14dp" android:background="#FFF3E0">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Withdrawal Requested" android:textSize="14sp"
+                            android:textStyle="bold" android:textColor="#E65100"
+                            android:layout_marginBottom="6dp"/>
+                        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:text="Processing your withdrawal. No club activities available. You will become a non-member once approved."
+                            android:textSize="13sp" android:textColor="#555555"
+                            android:lineSpacingMultiplier="1.4"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <!-- REJECTED state -->
+            <LinearLayout android:id="@+id/layoutRejected"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:visibility="gone"
+                android:layout_marginBottom="8dp">
+                <androidx.cardview.widget.CardView android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+                    <LinearLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:orientation="vertical"
+                        android:padding="14dp" android:background="#FFEBEE">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Application Not Approved" android:textSize="14sp"
+                            android:textStyle="bold" android:textColor="#C62828"
+                            android:layout_marginBottom="6dp"/>
+                        <TextView android:id="@+id/tvRejectedEmail"
+                            android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:textSize="13sp" android:textColor="@color/colorPrimary"
+                            android:textStyle="bold" android:layout_marginBottom="6dp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <Button android:id="@+id/btnReapply"
+                    android:layout_width="match_parent" android:layout_height="52dp"
+                    android:text="Reapply"
+                    android:textSize="15sp" android:textColor="@android:color/white"
+                    android:background="@color/colorAccent"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

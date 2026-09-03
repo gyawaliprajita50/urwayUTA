@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">URwayUTA</string>
+    <string name="nav_open">Open navigation drawer</string>
+    <string name="nav_close">Close navigation drawer</string>
+    <string name="uta_campus_navigation">UTA Campus Navigation</string>
+    <string name="sign_in">Sign In</string>
+    <string name="create_account">Create Account</string>
+    <string name="campus_map">Campus Map</string>
+    <string name="clubs">Clubs</string>
+    <string name="services">Services</string>
+    <string name="account">Account</string>
+    <string name="map_tab">Map</string>
+    <string name="favorites_tab">Favorites</string>
+    <string name="for_you_tab">For You</string>
+    <string name="change_password">Change Password</string>
+    <string name="my_memberships">My Memberships</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="available">Available</string>
+    <string name="unavailable">Unavailable</string>
+    <string name="not_a_member">Not a Member</string>
+    <string name="pending">Pending</string>
+    <string name="active_member">Active Member</string>
+    <string name="withdrawal_pending">Withdrawal Pending</string>
+    <string name="not_approved">Not Approved</string>
+    <string name="full_map">Full UTA Map</string>
+    <string name="navigate">Navigate (Google Maps)</string>
+    <string name="save_to_favorites">Save to Favorites</string>
+    <string name="remove_from_favorites">Remove from Favorites</string>
+    <string name="ive_applied">I\'ve Applied / Contacted</string>
+    <string name="withdraw_application">Withdraw Application</string>
+    <string name="coming_soon">Coming Soon</string>
+    <string name="recommended">Recommended</string>
+</resources>

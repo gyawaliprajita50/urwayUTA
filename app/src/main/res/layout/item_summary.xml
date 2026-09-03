@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- item_summary.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="horizontal" android:padding="4dp"
+    android:gravity="center_vertical">
+    <TextView android:id="@+id/tvSummaryName"
+        android:layout_width="0dp" android:layout_height="wrap_content"
+        android:layout_weight="1" android:textSize="11sp"
+        android:textColor="@color/colorTextPrimary" android:maxLines="1" android:ellipsize="end"/>
+    <TextView android:id="@+id/tvSummaryValue"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textSize="10sp" android:textColor="@color/colorTextSecondary"
+        android:layout_marginStart="8dp"/>
+</LinearLayout>

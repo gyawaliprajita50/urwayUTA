@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F4F6FB">
+
+    <!-- Toolbar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorAccent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/btnBackCreate"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:text="&#8249;"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:padding="0dp"
+            android:background="@drawable/bg_icon_transparent"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:text="Create Club"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <!-- Scrollable form -->
+    <ScrollView
+        android:id="@+id/scrollCreateForm"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Warning notice -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#FFF8E1"
+                android:padding="14dp"
+                android:gravity="top"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:text="!"
+                    android:gravity="center"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:textColor="#E65100"
+                    android:background="@drawable/bg_icon_orange"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="1dp"/>
+
+                <TextView
+                    android:id="@+id/tvUtaLink"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="11sp"
+                    android:textColor="#555555"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="Creating a student organization requires university approval. Visit "
+                    android:background="?attr/selectableItemBackground"/>
+            </LinearLayout>
+
+            <!-- Club Name -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Club Name *"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="#1A1A1A"
+                android:layout_marginBottom="6dp"/>
+            <EditText
+                android:id="@+id/etClubName"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_input"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:hint="e.g. UTA Robotics"
+                android:textColorHint="#AAAAAA"
+                android:textSize="14sp"
+                android:textColor="#1A1A1A"
+                android:inputType="text"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Description -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description *"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="#1A1A1A"
+                android:layout_marginBottom="6dp"/>
+            <EditText
+                android:id="@+id/etClubDesc"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_input"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:hint="What does your club do?"
+                android:textColorHint="#AAAAAA"
+                android:textSize="14sp"
+                android:textColor="#1A1A1A"
+                android:inputType="text"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Category -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category *"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="#1A1A1A"
+                android:layout_marginBottom="6dp"/>
+            <EditText
+                android:id="@+id/etClubCat"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_input"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:hint="e.g. Technology"
+                android:textColorHint="#AAAAAA"
+                android:textSize="14sp"
+                android:textColor="#1A1A1A"
+                android:inputType="text"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Location -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="#1A1A1A"
+                android:layout_marginBottom="6dp"/>
+            <EditText
+                android:id="@+id/etClubLoc"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_input"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:hint="e.g. ERB Room 204"
+                android:textColorHint="#AAAAAA"
+                android:textSize="14sp"
+                android:textColor="#1A1A1A"
+                android:inputType="text"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Contact Email -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Email"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="#1A1A1A"
+                android:layout_marginBottom="6dp"/>
+            <EditText
+                android:id="@+id/etClubEmail"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_input"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:hint="club@mavs.uta.edu"
+                android:textColorHint="#AAAAAA"
+                android:textSize="14sp"
+                android:textColor="#1A1A1A"
+                android:inputType="textEmailAddress"
+                android:layout_marginBottom="20dp"/>
+
+            <!-- Error message -->
+            <TextView
+                android:id="@+id/tvCreateError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:textSize="13sp"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:background="@drawable/bg_error"
+                android:textColor="#C62828"/>
+
+            <!-- Create Club button -->
+            <Button
+                android:id="@+id/btnCreateClub"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="Create Club"
+                android:textSize="15sp"
+                android:textColor="@android:color/white"
+                android:background="@color/colorAccent"
+                android:alpha="0.5"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Success screen — hidden until club is created -->
+    <LinearLayout
+        android:id="@+id/layoutCreateSuccess"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&#10003;"
+            android:textSize="56sp"
+            android:textColor="#2E7D32"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Club Created!"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#2E7D32"
+            android:layout_marginTop="14dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your club has been added to the list."
+            android:textSize="14sp"
+            android:textColor="#777777"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/btnBackToClubs"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="24dp"
+            android:text="Back to Clubs"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:background="@color/colorAccent"/>
+    </LinearLayout>
+
+</LinearLayout>

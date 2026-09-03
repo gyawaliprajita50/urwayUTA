@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mapFragment">
+
+    <fragment android:id="@+id/mapFragment"
+        android:name="com.team4.urwayuta.ui.map.MapFragment"
+        android:label="Campus Map"
+        tools:layout="@layout/fragment_map"/>
+
+    <fragment android:id="@+id/clubsFragment"
+        android:name="com.team4.urwayuta.ui.clubs.ClubsFragment"
+        android:label="Clubs"
+        tools:layout="@layout/fragment_clubs">
+        <action android:id="@+id/to_club_detail"
+            app:destination="@id/clubDetailFragment"/>
+        <action android:id="@+id/to_create_club"
+            app:destination="@id/createClubFragment"/>
+    </fragment>
+
+    <fragment android:id="@+id/clubDetailFragment"
+        android:name="com.team4.urwayuta.ui.clubs.ClubDetailFragment"
+        android:label="Club Detail"
+        tools:layout="@layout/fragment_club_detail">
+        <argument android:name="clubID" app:argType="integer" android:defaultValue="-1"/>
+    </fragment>
+
+    <fragment android:id="@+id/createClubFragment"
+        android:name="com.team4.urwayuta.ui.clubs.CreateClubFragment"
+        android:label="Create Club"
+        tools:layout="@layout/fragment_create_club"/>
+
+    <fragment android:id="@+id/servicesFragment"
+        android:name="com.team4.urwayuta.ui.services.ServicesFragment"
+        android:label="Services"
+        tools:layout="@layout/fragment_services"/>
+
+    <fragment android:id="@+id/accountFragment"
+        android:name="com.team4.urwayuta.ui.account.AccountFragment"
+        android:label="Account"
+        tools:layout="@layout/fragment_account"/>
+
+    <fragment android:id="@+id/changePasswordFragment"
+        android:name="com.team4.urwayuta.ui.account.ChangePasswordFragment"
+        android:label="Change Password"
+        tools:layout="@layout/fragment_change_password"/>
+    <fragment
+        android:id="@+id/customPinFragment"
+        android:name="com.team4.urwayuta.ui.map.CustomPinFragment"
+        android:label="Custom Pin"
+        tools:layout="@layout/fragment_custom_pin"/>
+
+</navigation>
