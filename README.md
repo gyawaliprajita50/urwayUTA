@@ -3,11 +3,11 @@ Android app to help UTA students navigate campus resources
 
 ## Screenshots
 
-| Sign In | Campus Map | Favorites |
+| Sign In | Campus Map | For You |
 |---|---|---|
 | ![Sign In](screenshots/sign-in.png) | ![Campus Map](screenshots/campus-map.png) | ![Favorites](screenshots/ERB-spotlist.png) |
 
-| For You | Clubs | Club Detail |
+| Inside ERB | Clubs | Club Detail |
 |---|---|---|
 | ![For You](screenshots/for-you.png) | ![Clubs](screenshots/clubs.png) | ![Club Detail](screenshots/club-detail.png) |
 
